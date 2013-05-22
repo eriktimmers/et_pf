@@ -1,0 +1,25 @@
+<div class="toppanel"><h1>Erik Timmers  -  Portfolio</h1></div>
+
+<? foreach($this->list as $project): ?>
+    <div class="panel">
+        <div class="leftside">
+            <h2><?= $project["prj_title"] ?></h2>
+            <p><?= $project["prj_oplevering"] ?></p>
+            
+            <p><span class="label">Opdrachtgever:</span> <span class="projecttext"><?= $project["prj_opdrachtgever"] ?></span><br/>
+            <span class="label">Type:</span> <span class="projecttext"><?= $project["prj_backoffice_or_frontoffice"] ?></span><br/>
+            <span class="label">Technieken:</span> <span class="projecttext"><?= $project["prj_keywords"] ?></span><br/>
+            <span class="label">URL:</span> <span class="projecttext"><?= $project["prj_url"] ?></span><br/>
+            </p>
+            <p><?= $project["prj_description"] ?></p>
+        </div>
+        <div class="rightside">
+            <? if ($project["prj_img"]): ?>
+                <img class="screenshot" src="/public/img/screenshots/<?= $project["prj_img"] ?>" title="<?= $project["prj_title"] ?>"/>
+            <? else: ?>
+                <img class="screenshot" src="/public/img/screenshots/noimage.png" title="Geen screenshot aanwezig"/>
+            <? endif; ?>    
+        </div>
+        
+    </div>
+<? endforeach; ?>

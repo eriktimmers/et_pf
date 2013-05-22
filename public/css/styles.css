@@ -1,0 +1,85 @@
+/* 
+    Document   : style
+    Created on : 07-Sep-2011, 15:43:11
+    Author     : Erik
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    font: 12px Verdana,Helvetica,sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #2a2a2a url('/public/img/background.png') repeat-y center;
+    color: #eeeeee;
+}
+
+a {
+    color: #aaaaaa;
+}
+
+#container {    
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.toppanel {
+    background: url('/public/img/toppanel.png') no-repeat;
+    width: 1016px;
+    height: 58px;
+    margin: 0px 0px 0px 5px;  
+    padding: 50px 10px 0px 45px;    
+}
+
+.toppanel h1 {
+    font-size: 28px;
+    color: #aaaaaa;
+    padding: 0;
+    margin: 0;
+}
+
+.panel {
+    background: url('/public/img/panel.png');
+    width: 932px;
+    height: 322px;
+    margin: 30px 0px 10px 50px;
+}
+
+.panel .leftside {
+    margin: 20px 20px 20px 45px;
+    padding: 10px 0px;
+    width: 585px;
+    /*border: 1px solid red;*/
+    float: left;
+}
+
+.panel .rightside {
+    margin: 20px 36px 20px 20px;
+    padding: 15px 0px;
+    
+    /*border: 1px solid blue;*/
+    float: right;
+}
+
+.loginpanel {
+    margin: 0px 36px 20px 36px;
+    padding: 15px 0px;    
+}
+
+.panel .label {
+    font-weight: bold;
+}
+
+.panel .projecttext {
+    font-style: italic;
+}

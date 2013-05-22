@@ -1,0 +1,26 @@
+<?= $this->doctype(); ?> 
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">  
+         
+        <? echo $this->headTitle('Portfolio Erik Timmers', 'PREPEND')->setSeparator(' - ');
+           echo $this->HeadMeta()->appendName('author', 'Erik');   
+           echo $this->headLink()->appendStylesheet("/public/css/styles.css?v=1.0");
+        ?>
+    </head>
+    <body>
+        <div id="container">
+            <?php echo $this->layout()->content; ?>
+        </div>
+        
+        
+        <?= $this->inlineScript()
+                 ->prependFile(
+                    '/public/js/script.js',
+                    'text/javascript')
+                ->prependFile(
+                    '/public/js/jquery-1.6.1.min.js',
+                    'text/javascript');
+        ?>
+    </body>
+</html>

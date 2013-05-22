@@ -1,0 +1,6 @@
+<? foreach($this->list as $project): ?>
+    <a href="/index/edit/id/<?=$project["prj_id"] ?>"><?= $project["prj_title"] ?></a><br/>
+<? endforeach; ?>
+
+    <br/><br/>
+    <a href="/index/edit/id/">Nieuw</a><br/>
